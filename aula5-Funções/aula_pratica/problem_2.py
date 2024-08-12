@@ -14,6 +14,9 @@ import os
 
 
 def exibir_menu():
+    """
+    Exibe o menu principal do programa
+    """
     print('-' * 40)
     print('-' * 15 + '|', ' MENU ', '|' + '-' * 15)
     print('-' * 3 + '|', '1 - CADASTRAR NOVO JOGO' + ' ' * 7, '|' + '-' * 3)
@@ -26,6 +29,11 @@ def exibir_menu():
 
 
 def option_is_valid(option_selected):
+    """
+    Valida a opção desejada
+    :param option_selected: int digitado pelo usuário
+    :return: true ou false
+    """
     if 1 <= option_selected <= 4:
         return True
     else:
@@ -34,6 +42,10 @@ def option_is_valid(option_selected):
 
 
 def create_file(name_file):
+    """
+    Cria arquivo .txt
+    :param name_file: nome para o arquivo
+    """
     try:
         a = open(name_file, 'wt+')
         a.write('Lista de jogos cadastrados\n')
@@ -45,6 +57,12 @@ def create_file(name_file):
 
 
 def registrer_game(name_file, name_game, name_videogame):
+    """
+    Cadastra o jogo no arquivo .txt
+    :param name_file: nome do arquivo onde será salvo
+    :param name_game: nome do jogo a cadastrar
+    :param name_videogame: nome do videogame referente ao jogo
+    """
     try:
         a = open(name_file, 'at')
     except:
@@ -54,6 +72,10 @@ def registrer_game(name_file, name_game, name_videogame):
 
 
 def list_games(name_file):
+    """
+    Lista os jogos cadastrados
+    :param name_file: nome do arquivo onde esta salvo os jogos
+    """
     try:
         a = open(name_file, 'rt')
     except:
@@ -63,6 +85,10 @@ def list_games(name_file):
 
 
 def delete_file(name_file):
+    """
+    Deleta o arquivo que contem os jogos cadastrados
+    :param name_file: nome do arquivo .txt
+    """
     try:
         a = open(name_file, 'rt')
         a.close()
@@ -74,6 +100,10 @@ def delete_file(name_file):
 
 
 def there_is_file_created(name_file):
+    """
+    Verfica se o arquivo .txt já foi criado
+    :param name_file: nome do arquivo .txt
+    """
     try:
         a = open(name_file, 'rt')
         a.close()
@@ -84,6 +114,7 @@ def there_is_file_created(name_file):
         return True
 
 
+#programa principal onde exibe o menu com as opções.
 while True:
     name_file = 'list of games.txt'
     exibir_menu()
