@@ -15,11 +15,11 @@ juros = 0
 
 if quatidade_de_parcelas < 4:
     juros = 0
-elif quatidade_de_parcelas>= 4 and quatidade_de_parcelas < 6:
+elif 4 <= quatidade_de_parcelas < 6:
     juros = 4/100
-elif quatidade_de_parcelas >= 6 and quatidade_de_parcelas < 9:
+elif 6 <= quatidade_de_parcelas < 9:
     juros = 8/100
-elif quatidade_de_parcelas >=9 and quatidade_de_parcelas < 13:
+elif 9 <= quatidade_de_parcelas < 13:
     juros = 16/100
 else:
     juros = 32/100
