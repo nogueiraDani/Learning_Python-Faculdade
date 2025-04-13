@@ -1862,7 +1862,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBDm7hNutIM="
 							},
-							"name": "age"
+							"name": "age",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1870,7 +1871,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBDm7hNutIM="
 							},
-							"name": "height"
+							"name": "height",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1878,7 +1880,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBDm7hNutIM="
 							},
-							"name": "weight"
+							"name": "weight",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1886,7 +1889,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBDm7hNutIM="
 							},
-							"name": "position"
+							"name": "position",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -1904,7 +1908,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGWMCfdAhpAs1Q="
 									},
-									"name": "age"
+									"name": "age",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -1990,7 +1995,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBQvlxQUEF0="
 							},
-							"name": "fur"
+							"name": "fur",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -2033,7 +2039,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBVlLRRdBP4="
 							},
-							"name": "breed"
+							"name": "breed",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2041,7 +2048,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBVlLRRdBP4="
 							},
-							"name": "tail_fur"
+							"name": "tail_fur",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -2084,7 +2092,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMBWVdhSYRZQ="
 							},
-							"name": "breed"
+							"name": "breed",
+							"type": ""
 						}
 					]
 				},
@@ -2102,7 +2111,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGWMCNX7BT1x08="
 							},
-							"name": "list_animal"
+							"name": "list_animal",
+							"type": ""
 						}
 					]
 				}
