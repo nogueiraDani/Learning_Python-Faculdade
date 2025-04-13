@@ -288,3 +288,9 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,python
 
+
+/aula2-poo/.idea/vcs.xml
+/aula2-poo/.idea/workspace.xml
+/aula2-poo/.idea/inspectionProfiles/Project_Default.xml
+/aula2-poo/.idea/inspectionProfiles/profiles_settings.xml
+/aula2-poo/.idea/modules.xml
