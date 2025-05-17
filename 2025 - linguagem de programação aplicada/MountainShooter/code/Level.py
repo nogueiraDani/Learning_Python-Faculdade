@@ -8,6 +8,7 @@ from pygame.font import Font
 from pygame.rect import Rect
 from pygame.surface import Surface
 
+from code.EntityMediator import EntityMediator
 from code.Const import COLOR_WHITE, EVENT_ENEMY, MENU_OPTION, SPAW_TIME, WIN_HEIGHT
 from code.Entity import Entity
 from code.EntityFactory import EntityFactory
@@ -71,6 +72,13 @@ class Level:
                             (10, WIN_HEIGHT - 20))
 
             pygame.display.flip()
+            
+            #Colisions
+            EntityMediator.verify_collision(entity_list=self.entity_list)
+            EntityMediator.verify_helth(entity_list=self.entity_list) 
+            ## TODO: parei aqui ta com erro: video do prof 22:11
+
+
 
 
     def level_text(self, text_size: int, text: str, text_color: tuple, text_pos: tuple):
