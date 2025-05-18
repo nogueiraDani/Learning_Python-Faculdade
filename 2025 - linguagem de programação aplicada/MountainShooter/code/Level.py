@@ -8,10 +8,12 @@ from pygame.font import Font
 from pygame.rect import Rect
 from pygame.surface import Surface
 
+from code.Enemy import Enemy
 from code.EntityMediator import EntityMediator
 from code.Const import COLOR_WHITE, EVENT_ENEMY, MENU_OPTION, SPAW_TIME, WIN_HEIGHT
 from code.Entity import Entity
 from code.EntityFactory import EntityFactory
+from code.Player import Player
 
 
 class Level:
@@ -46,6 +48,12 @@ class Level:
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
                 ent.move()
+                if isinstance(ent, (Player, Enemy)):
+                    shoot = ent.shoot()
+                    if shoot is not None:
+                        self.entity_list.append(shoot)
+            
+            
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -76,7 +84,7 @@ class Level:
             #Colisions
             EntityMediator.verify_collision(entity_list=self.entity_list)
             EntityMediator.verify_helth(entity_list=self.entity_list) 
-            ## TODO: parei aqui ta com erro: video do prof 22:11
+            
 
 
 
